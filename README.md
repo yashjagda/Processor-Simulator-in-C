@@ -1,16 +1,16 @@
 ---------------------------------------------------------------------------------
 APEX Pipeline Simulator
 ---------------------------------------------------------------------------------
-A simple implementation of 5 Stage APEX Pipeline
+A simple implementation of 7 Stage APEX Pipeline
 
 
 
 
 Notes:
 ----------------------------------------------------------------------------------
-1) This code is a simple implementation of 5 Stage APEX Pipeline. 
+1) This code is a simple implementation of 7 Stage APEX Pipeline. 
 	 
-	 Fetch -> Decode -> Execute -> Memory -> Writeback
+	 Fetch -> Decode -> Execute-1 -> Execute-2 -> Memory-1 -> Memory-2 -> Writeback
 	 
 	 You can read, modify and build upon given codebase to add other features as
 	 required in project description. You are also free to write your own 
@@ -32,7 +32,9 @@ File-Info
 How to compile and run
 ----------------------------------------------------------------------------------
 1) go to terminal, cd into project directory and type 'make' to compile project
-2) Run using ./apex_sim <input file name>
+2) Run using ./apex_sim <input file name> simulate
+OR
+   ./apex_sim <input file name> display
 
 
 
